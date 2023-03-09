@@ -1,0 +1,10 @@
+mysql: 
+  address: 127.0.0.1
+  port: 3306
+  protocal: tcp
+  user: root
+  password: 123456
+  charset: utf8mb4
+  parseTime: True
+  loc: Local
+  database: test

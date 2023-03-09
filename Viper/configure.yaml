@@ -1,0 +1,7 @@
+mysql:
+  host: localhost
+  user: root
+  password: 123456
+  port: 3306
+shit:
+  purpose: "是故意的" 

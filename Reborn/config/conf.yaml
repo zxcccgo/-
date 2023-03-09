@@ -1,0 +1,12 @@
+mysql: 
+  host: "127.0.0.1"
+  port: "3306"
+  user: root
+  passwd: "123456"
+  db: reborn
+  charset: utf8mb4
+  parseTime: True
+  loc: Local
+  max_open_connections: 200
+  max_idle_connections: 10
+  max_lift_time: 60
