@@ -5,11 +5,11 @@ import (
 	"reborn/router"
 	"reborn/tools/viper"
 
-	"reborn/tools/zap"
+	"reborn/tools/logger"
 )
 
 func main() {
-	zap.InitZAP()
+	logger.InitZAP()
 	viper.InitViper()
 	DB.InitDB()
 	router.InitRouter()

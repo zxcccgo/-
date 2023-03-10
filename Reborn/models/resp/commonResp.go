@@ -1,4 +1,5 @@
 package resp
+
 //通用结构
 
 //resp
@@ -12,6 +13,7 @@ type User struct{
 	Name string`json:"name"`
 	FollowCnt int64`json:"follow_count"`
 	FollowerCnt int64`json:"follower_count"`
+	IsFollow bool `json:"is_follow"`
 	Avatar string`json:"avatar"`
 	BackgroundImg string`json:"background_image"`
 	Signature string`json:"signature"`

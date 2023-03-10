@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"reborn/models/Tables"
-	"reborn/tools/zap"
+	"reborn/tools/logger"
 
 	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"
@@ -27,12 +27,12 @@ func InitDB() {
 	var err error
 	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err!=nil{
-		zap.SuggerLogger.Errorf("DB初始化失败:",err)
+		logger.SuggerLogger.Errorf("DB初始化失败:",err)
 		log.Fatalln("DB初始化失败:",err)
 
 
 	}
-	zap.SuggerLogger.Info("DB连接成功...")
+	logger.SuggerLogger.Info("DB连接成功...")
 	log.Println("DB 连接成功...")
 	//第一次连接 创建表格
 	CreateTables()
@@ -52,6 +52,6 @@ func CreateTables(){
 		log.Println(err)
 	}
 	log.Println("表格初始化成功")
-	zap.SuggerLogger.Info("表格初始化成功")
+	logger.SuggerLogger.Info("表格初始化成功")
 
 }

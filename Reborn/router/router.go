@@ -1,25 +1,28 @@
 package router
 
 import (
-	"net/http"
-
 	"github.com/gin-gonic/gin"
 )
 
+//初始化路由
 func InitRouter() {
 	r := gin.Default()
 	RouterMAP(r)
 	r.Run()
 	
 }
+//路由功能
 func RouterMAP(r *gin.Engine){
-	access := r.Group("./douyin")
+	r.Static("./static","./public")//静态文件映射
+	
+	//建立路由组
 
-	//basic
-	access.GET("/feed", echo)
+	//基本功能
+	
+	//互动功能
+	//社交功能
+
+
+
 }
-func echo(r *gin.Context){
-	r.JSON(http.StatusOK,map[string]string{
-	"name":"zx",
-	})
-}
+

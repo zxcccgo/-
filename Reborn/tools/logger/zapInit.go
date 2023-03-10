@@ -1,5 +1,5 @@
-package zap
-
+package logger
+//zap 日志库用于处理关键信息，支持控制台输出和文件输出，方便BUG和瓶颈问题的排查。
 import (
 	"os"
 

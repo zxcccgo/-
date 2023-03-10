@@ -10,3 +10,8 @@ mysql:
   max_open_connections: 200
   max_idle_connections: 10
   max_lift_time: 60
+video:
+  count: 4
+app:
+  address: 127.0.0.1
+  port: 8080
