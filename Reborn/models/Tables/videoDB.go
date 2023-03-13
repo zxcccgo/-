@@ -3,7 +3,7 @@ package Tables
 import "time"
 
 type VideosDB struct {
-	VideoID       int64     `gorm:"id"`
+	Id            int64     `gorm:"id"`
 	AuthorID      int64     `gorm:"author_id"`
 	PlayUrl       string    `gorm:"play_url"`
 	CoverUrl      string    `gorm:"cover_url"`
@@ -12,6 +12,7 @@ type VideosDB struct {
 	CommentCount  int64     `gorm:"comment_count"`
 	Title         string    `gorm:"title"`
 }
-func(VideosDB) TableName()string{
+
+func (VideosDB) TableName() string {
 	return "videos"
 }

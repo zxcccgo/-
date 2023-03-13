@@ -51,7 +51,7 @@ func Feed(latestTime time.Time,curUserId int64)(*resp.FeedResp,error){
 func CompleteVideoInfo(videoTable *Tables.VideosDB,curUserId int64)(resp.Video,error){
 	CompeleteVD:=new(resp.Video)
 	//完善视频信息
-	CompeleteVD.Id=videoTable.VideoID
+	CompeleteVD.Id=videoTable.Id
 	CompeleteVD.PlayUrl=videoTable.PlayUrl
 	CompeleteVD.CoverUrl=videoTable.CoverUrl
 	CompeleteVD.FavoriteCnt=videoTable.FavoriteCount
@@ -62,7 +62,7 @@ func CompleteVideoInfo(videoTable *Tables.VideosDB,curUserId int64)(resp.Video,e
 	
 	CompeleteVD.Author=user
 	//是否点赞
-	isLike,_:= GetLikeByUserId(curUserId, videoTable.VideoID)
+	isLike,_:= GetLikeByUserId(curUserId, videoTable.Id)
 	CompeleteVD.IsFavorite=isLike
 	
 

@@ -9,7 +9,7 @@ import (
 
 func GetNameById(userId int64)(string,error){
 	var user Tables.UserBasicDB
-	if err := DB.Where("user_id=?", userId).Find(&user).Error;err!=nil{
+	if err := DB.Where("id=?", userId).Find(&user).Error;err!=nil{
 		logger.SuggerLogger.Errorf("用户id:%d找不到name",userId)
 		return "",err
 	}
@@ -20,7 +20,7 @@ func GetNameById(userId int64)(string,error){
 
 func GetUserInfoById(userId int64)(int64,int64,int64,error){
 	var userInfo Tables.UserInfoDB
-	if err := DB.Where("user_id=?", userId).Find(&userInfo).Error;err!=nil{
+	if err := DB.Where("id=?", userId).Find(&userInfo).Error;err!=nil{
 		logger.SuggerLogger.Errorf("用户id：%d找不到userinfo",userId)
 		return -1,-1,-1,err
 	}

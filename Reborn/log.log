@@ -1,3 +1,16 @@
-2023-02-28T20:47:11.777+0800	INFO	viper/initViper.go:31	viper 初始化成功...
-2023-02-28T20:47:11.779+0800	INFO	DB/InitDB.go:35	DB连接成功...
-2023-02-28T20:47:11.797+0800	INFO	DB/InitDB.go:55	表格初始化成功
+2023-03-13T11:17:07.153+0800	INFO	viper/initViper.go:32	viper 初始化成功...
+2023-03-13T11:17:07.156+0800	INFO	DB/InitDB.go:35	DB连接成功...
+2023-03-13T11:17:07.184+0800	INFO	DB/InitDB.go:55	表格初始化成功
+2023-03-13T11:17:07.185+0800	INFO	router/router.go:23	开启路由...
+2023-03-13T11:22:09.918+0800	INFO	controller/video.go:32	视频里请求传入时间：{last_time 11 1678677730369  <nil>}
+2023-03-13T11:22:09.918+0800	INFO	controller/video.go:40	时间戳：
+55165-03-07 17:32:49 +0800 CST
+2023-03-13T11:22:10.027+0800	INFO	controller/video.go:32	视频里请求传入时间：{last_time 11 1678676964  <nil>}
+2023-03-13T11:22:10.027+0800	INFO	controller/video.go:40	时间戳：
+2023-03-13 11:09:24 +0800 CST
+2023-03-13T11:22:10.095+0800	INFO	controller/video.go:32	视频里请求传入时间：{last_time 11 1678676964  <nil>}
+2023-03-13T11:22:10.096+0800	INFO	controller/video.go:40	时间戳：
+2023-03-13 11:09:24 +0800 CST
+2023-03-13T11:22:14.604+0800	INFO	controller/video.go:32	视频里请求传入时间：{last_time 11 1678676964  <nil>}
+2023-03-13T11:22:14.604+0800	INFO	controller/video.go:40	时间戳：
+2023-03-13 11:09:24 +0800 CST
